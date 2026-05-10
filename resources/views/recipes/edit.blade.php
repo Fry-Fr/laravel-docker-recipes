@@ -23,8 +23,8 @@
             </div>
 
             <div class="mb-3">
-                <label for="description" class="form-label">Description</label>
-                <textarea name="description" class="form-control" id="description" rows="3">{{ $recipe->description }}</textarea>
+                <label for="instructions" class="form-label">Instructions</label>
+                <textarea name="instructions" class="form-control" id="instructions" rows="3">{{ $recipe->instructions }}</textarea>
             </div>
 
             <div class="mb-3">

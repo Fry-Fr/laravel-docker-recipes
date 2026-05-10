@@ -23,9 +23,9 @@
                     </div>
 
                     <h1 class="mb-4 fw-medium">{{ $recipe->title }}</h1>
-                    @if($recipe->description)
-                        <h3 class="mb-3 fw-medium">Description</h3>
-                        <p>{{ $recipe->description }}</p>
+                    @if($recipe->instructions)
+                        <h3 class="mb-3 fw-medium">Instructions</h3>
+                        <p>{{ $recipe->instructions }}</p>
                     @endif
                     <h3 class="mb-3 fw-medium">Ingredients</h3>
                     <ol class="list-group">

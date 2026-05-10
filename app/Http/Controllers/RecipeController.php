@@ -34,7 +34,7 @@ class RecipeController extends Controller
         $recipe = Recipe::findOrFail($id);
         $data = $request->validate([
             'title' => 'required|string|max:255',
-            'description' => 'nullable|string',
+            'instructions' => 'nullable|string',
             'ingredients' => 'required|string',
         ]);
         $recipe->update($data);
@@ -64,7 +64,7 @@ class RecipeController extends Controller
         // Validate the form
         $data = $request->validate([
             'title' => 'required|string|max:255',
-            'description' => 'nullable|string',
+            'instructions' => 'nullable|string',
             'ingredients' => 'required|string',
         ]);
         Recipe::create($data);
